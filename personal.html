@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASSIGNMENT 7</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .steps {
+            display: flex;
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .step {
+            padding: 12px;
+            flex: 1;
+            font-size: 18px;
+            background-color: lightgray;
+        }
+
+        .completed {
+            background-color: lightgreen;
+        }
+
+        .active {
+            background-color: #5b9bd5;
+        }
+
+        fieldset {
+            width: 85%;
+            margin: 50px auto;
+        }
+
+        input {
+            padding: 6px;
+            margin-bottom: 15px;
+        }
+
+        .name-input {
+            width: 90%;
+        }
+
+        .cnic {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .social {
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="steps">
+        <div class="step completed">Step 1: Account</div>
+        <div class="step active">Step 2: Personal Details</div>
+        <div class="step">Step 3: Your Review</div>
+    </div>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <h3>First Name:</h3>
+            <input type="text" class="name-input" placeholder="Enter First Name">
+
+            <h3>Last Name:</h3>
+            <input type="text" class="name-input" placeholder="Enter Last Name">
+
+            <h3>CNIC:</h3>
+<input type="text" maxlength="1" class="cnic">
+            <input type="text" maxlength="1" class="cnic">
+            <input type="text" maxlength="1" class="cnic">
+            <input type="text" maxlength="1" class="cnic">
+            <input type="text" maxlength="1" class="cnic">
+            -
+ <input type="text" maxlength="1" class="cnic">
+            <input type="text" maxlength="1" class="cnic">
+            <input type="text" maxlength="1" class="cnic">
+            <input type="text" maxlength="1" class="cnic">
+            <input type="text" maxlength="1" class="cnic">
+            <input type="text" maxlength="1" class="cnic">
+            <input type="text" maxlength="1" class="cnic">
+            -
+<input type="text" maxlength="1" class="cnic">
+
+            <h3>Social Link:</h3>
+            <input type="text" class="social" placeholder="Enter Facebook/Linkedin profile link">
+
+            <br><br>
+
+            <a href="account.html">
+                <img src="./back button.png" width="100" alt="Back">
+            </a>
+<a href="review.html">
+    <img src="./next button.png" width="115" alt="Next">
+</a>
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>

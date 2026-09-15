@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Review</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .steps {
+            display: flex;
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .step {
+            padding: 12px;
+            flex: 1;
+            font-size: 18px;
+            background-color: lightgray;
+        }
+
+        .completed {
+            background-color: lightgreen;
+        }
+
+        .active {
+            background-color: #5b9bd5;
+        }
+
+        fieldset {
+            width: 85%;
+            margin: 50px auto;
+        }
+
+        select {
+            padding: 5px;
+        }
+
+        textarea {
+            width: 55%;
+            height: 75px;
+        }
+.button {
+            background-color: #07527c;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 20px;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="steps">
+        <div class="step completed">Step 1: Account</div>
+        <div class="step completed">Step 2: Personal Details</div>
+        <div class="step active">Step 3: Your Review</div>
+    </div>
+
+    <form>
+
+        <fieldset>
+            <legend>Your Review:</legend>
+
+            <h3>
+                How did you hear about us?
+                <select>
+                    <option>Select your option</option>
+                    <option>Google</option>
+                    <option>Facebook</option>
+                    <option>Friend</option>
+                </select>
+            </h3>
+
+            <h3>Would you visit again?</h3>
+
+            <input type="radio" name="visit"> Yes
+            <input type="radio" name="visit"> No
+            <input type="radio" name="visit"> Maybe
+
+            <br><br>
+
+            <h3>Comments:</h3>
+
+            <textarea placeholder="Enter your comments here..."></textarea>
+
+            <h3>Documents:</h3>
+
+            <input type="file">
+
+            <br><br>
+
+            <input type="checkbox">
+            <b>Sign me up for email updates</b>
+
+            <br><br>
+
+            <a href="personal.html">
+                <img src="./back button.png" width="100" alt="Back">
+            </a>
+<button type="submit" class="button">
+                Submit &nbsp; ▶
+            </button>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
