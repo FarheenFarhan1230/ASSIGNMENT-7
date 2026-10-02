@@ -2,70 +2,34 @@
 <html lang="en">
 <head>
         <title>ASSIGNMENT 7</title>
-<style>
-        body {
-            font-family: Arial;
-        }
-
-        .steps {
-            display: flex;
-            width: 90%;
-            margin: 30px auto;
-        }
-
-        .step {
-            padding: 12px;
-            background-color: lightgray;
-            flex: 1;
-            font-size: 18px;
-        }
-
-        .active {
-            background-color: #5b9bd5;
-        }
-
-        .completed {
-            background-color: green;
-            color: white;
-        }
-
-        fieldset {
-            width: 85%;
-            margin: 50px auto;
-        }
-
-        input {
-            width: 90%;
-            padding: 6px;
-            margin-bottom: 15px;
-        }
-    </style>
 </head>
-
 <body>
-
-    <div class="steps">
-        <div class="step active">Step 1: Account</div>
-        <div class="step">Step 2: Personal Details</div>
-        <div class="step">Step 3: Your Review</div>
-    </div>
-
-    <form>
-
+    <table width="100%" cellspacing="0" cellpadding="10" border="1" style="border-color:
+     lightgrey; text-align: center;">
+     <tr>
+        <td bgcolor="lightblue" width="33%">Step 1: Account</td>
+        <td bgcolor="lightgrey" width="33%"><b>Step 2: Personal Details</b></td>
+        <td bgcolor="lightgrey" width="33%">Step 3: Your Review</td>
+ </tr>
+     </table>
+      <br>
+<form>
         <fieldset>
-            <legend>Account</legend>
-
-            <h3>Email Address:</h3>
-            <input type="email" placeholder="Enter Email">
-
-            <h3>Password:</h3>
-            <input type="password" placeholder="Enter Password">
-
-            <h3>Confirm Password:</h3>
-            <input type="password" placeholder="Confirm Password">
-
-            <br><br>
-
+            <legend>Account Details</legend>
+            <p>
+                <label for="femail">Email Address:</label><br><br>
+                <input type="text" id="femail" placeholder="Enter Email" style="width: 300px; height: 30px; font-size: 15px; padding-left: 5px;">
+</p>
+<p>
+    <label for="fpassword">Password</label><br><br>
+    <input type="text" id="fpassword" placeholder="Enter Password" style="width:300px ; height:30px;font-size: 15px; padding-left: 5px;">
+</p>
+<p>
+    <label for="fconfirm">Confirm Password</label><br><br>
+    <input type="text" id="fconfirm" placeholder="Confirm Password" style="width:300px ; height:30px;font-size: 15px; padding-left: 5px;">
+</p>
+</p>
+<p>
     <a href="index.html">
         <img src="./back button.png" width="100" alt="Back">
     </a>
